@@ -1,0 +1,142 @@
+    .container-m {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      width: 30vw;
+    }
+
+    .section-m {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      background-color: #C57F1E;
+      height: 100vh;
+    }
+
+    .h-m {
+      font-size: xx-large;
+    }
+
+    .border-m {
+      display: flex;
+      background-color: gray;
+      border-top: 5px solid white;
+      border-left: 5px solid white;
+      border-right: 5px solid white;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0px 10px black;
+      height: 50vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p-m {
+      width: 200px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .img-levantando-forca,
+    .img-levantando {
+      width: 600px;
+    }
+
+    .img-levantando-forca {
+      display: none;
+    }
+
+    .container-m:hover {
+      animation: shake 0.5s infinite;
+    }
+
+    .container-m:hover .border-m {
+      height: 65vh;
+    }
+
+    .container-m:hover .img-levantando-forca {
+      display: flex;
+    }
+
+    .container-m:hover .img-levantando {
+      display: none;
+    }
+
+    .container-m:hover .p-m {
+      font-size: large;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      25% {
+        transform: translate(-2px, 2px);
+      }
+
+      50% {
+        transform: translate(2px, -2px);
+      }
+
+      75% {
+        transform: translate(-2px, -2px);
+      }
+
+      100% {
+        transform: translate(2px, 2px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-m {
+        height: auto;
+        padding: 1rem;
+      }
+
+      .container-m {
+        flex-direction:row;
+        width: 90vw;
+      }
+
+      .border-m {
+        width: auto;
+        height: auto;
+        word-wrap: break-word;
+        padding: 1rem;
+        border-radius: 15px;
+        box-shadow: 0px 5px black;
+      }
+
+    .container-m:hover .border-m {
+      height: auto;
+      width: auto;
+    }
+
+      .p-m {
+        width: 100%;
+        font-size: medium;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: initial;
+      }
+
+      .h-m {
+        font-size: x-large;
+        text-align: center;
+      }
+
+      .img-levantando-forca,
+      .img-levantando {
+        max-width: 100%;
+        height: 100%;
+      }
+
+    }

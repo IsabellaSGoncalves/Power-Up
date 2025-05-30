@@ -1,0 +1,290 @@
+.section-c {
+  display: flex;
+  flex-direction: row;
+  background-color: #C57F1E;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container-c {
+  display: flex;
+  flex-direction: column;
+  background-color: #C57F1E;
+  justify-content: center;
+}
+
+.h-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: start;
+}
+
+.h2-h-c {
+  font-size: xx-large;
+}
+
+.form-c {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  word-wrap: break-word;
+}
+
+.label-c {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-align: start;
+  font-size: x-large;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-c {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+.thumb-img {
+  max-width: 200px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.thumb-img:hover {
+  transform: scale(1.05);
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-img-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-img-container img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.popup-img-container button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-c {
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 30px;
+  background-color: #979797;
+  padding: 0.5rem;
+  width: 100%;
+  min-width: 50px;
+  border-radius: 30px;
+}
+
+.button-input-c {
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+  color: white;
+  background-color: #2F3847;
+  padding: 0.5rem;
+  width: 100%;
+  min-width: 10%;
+  border-radius: 30px;
+}
+
+.button-c:hover,
+.button-input-c:hover {
+  transition: 0.5s;
+  background-color: black;
+}
+
+.button-c:hover {
+  color: white;
+}
+
+.container-contato-c {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 100%;
+}
+
+.border-contato-c {
+  display: flex;
+  flex-direction: column;
+  background-color: #2F3847;
+  height: 50%;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20%;
+  box-shadow: 20px 20px #00000054;
+  color: white;
+}
+
+.h1-border-contato-c {
+  font-size: xx-large;
+}
+
+.h2-border-contato-c {
+  font-size: large;
+  width: 80%;
+}
+
+.p-border-contato {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.container-img-c {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.p-c {
+  font-weight: 500;
+}
+
+.redes-sociais-c {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.redes-sociais-c a {
+  color: white;
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .section-c {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .container-c {
+    align-items: center;
+  }
+
+  .h2-h-c {
+    text-align: center;
+  }
+
+  .h-c h4 {
+    text-align: center;
+  }
+
+  .container-contato-c {
+    width: 100%;
+    height: auto;
+  }
+
+  .border-contato-c {
+    width: 90%;
+    height: auto;
+    border-radius: 10%;
+    padding: 1rem;
+  }
+
+  .h1-border-contato-c {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .h2-border-contato-c {
+    font-size: medium;
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-c {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .label-c {
+    font-size: large;
+  }
+
+  .button-c,
+  .button-input-c {
+    width: 100%;
+  }
+
+  .thumb-img {
+    max-width: 100%;
+  }
+
+  .redes-sociais-c {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .redes-sociais-c a {
+    font-size: 20px;
+  }
+}

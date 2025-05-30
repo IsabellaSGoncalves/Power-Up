@@ -1,0 +1,11 @@
+footer {
+  background-color: black;
+  height: 10vh;
+}
+
+.p-footer{
+  margin: 0;
+  color: white;
+  padding: 2rem;
+  background: black;
+}

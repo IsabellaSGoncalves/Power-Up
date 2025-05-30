@@ -1,0 +1,35 @@
+.navbar {
+  padding: 10px;
+  position: fixed;
+  display: flex;
+  gap: 50px;
+  background-color: transparent;
+  padding-left: 20px;
+}
+
+.navbar a {
+  font-size: large;
+
+}
+
+.link-navbar {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1rem;
+    position: static; 
+  }
+
+  .link-navbar {
+    font-size: 18px;
+  }
+}

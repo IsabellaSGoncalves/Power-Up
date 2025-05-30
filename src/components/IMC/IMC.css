@@ -1,0 +1,162 @@
+.container-i {
+  height: 100vh;
+  background-color: #222832;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.form-i {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  background-color: #C57F1E;
+  padding: 5rem;
+  border-radius: 40px;
+  height: 50vh;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.342);
+}
+
+
+.label-i {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-align: start;
+  font-size: large;
+}
+
+.form-i div{
+  display: flex;
+  flex-direction: column;
+}
+.input-i,
+.select-i {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 5px solid #ccc;
+  border-radius: 50px;
+}
+
+.btn-i {
+  margin-top: auto;
+  padding: 0.75rem;
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-i:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
+.label-resultado-i {
+  display: flex;
+  flex-direction: row!important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.atributo-i{
+  display: flex;
+  align-items: center;
+}
+
+.atributo-i p{
+ background-color: white;
+ padding: 1rem;
+ border-radius: 40%;
+}
+
+.nome-resultado-i {
+  text-align: start;
+}
+
+.nome-resultado-i p {
+  margin-top: 0;
+}
+
+.nome-resultado-i h1{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.nome-resultado-i button{
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container-i {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .section-i {
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .form-i {
+    width: 100%;
+    max-width: 90%;
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .label-i {
+    font-size: medium;
+    text-align: center;
+  }
+
+  .input-i,
+  .select-i {
+    font-size: 0.9rem;
+  }
+
+  .btn-i {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .label-resultado-i {
+    flex-direction: column !important;
+    gap: 0.5rem;
+  }
+
+  .atributo-i p {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .nome-resultado-i h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .nome-resultado-i p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .nome-resultado-i button {
+    width: 100%;
+  }
+}
